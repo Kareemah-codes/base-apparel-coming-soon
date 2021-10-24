@@ -1,21 +1,76 @@
-.flexbox-container{
-    background-color: black;
-    display: flex;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;1,300&display=swap');
+
+*{
+    margin: 0;
 }
-.content{
-    background-color: green;
-    height: 100vh;
-    width: 100%;
+body{
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
 }
-.aside{
-    background-color: pink;
-    height: 100vh;
-    width: 60%;
+
+
+/*Mobile Styling */
+
+@media only screen and (min-width:375px){
+
+    body{
+        margin: 0;
+    }
+    .flexbox-container-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .logo{
+        width: 40%;
+        margin: 35px 0px 35px 35px;
+        
+    }
+    .hero-image{
+        
+        background-image: url("images/hero-mobile.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size:cover;
+        height: 20rem;
+        width: 100%;
+    }
+    .content{
+        background-color:white;
+        width: 100%;
+        
+    }
+    .title-text, .pink-text-title{
+        text-align: center;
+        font-size: 25px;
+        margin-top: 15px;
+        color:hsl(0, 6%, 24%);
+        font-weight: 600;
+
+    }
+    
+    .pink-text-title{
+        color: hsl(0, 36%, 70%);
+    } 
+    
+    .content-description{
+        text-align: center;
+        padding: 20px;
+
+    } 
+    form{
+         width: 100%;
+         background-color: blue;
+    } 
+    .email-box{
+        width: 50%;
+        text-align: center;
+        
+    } 
 }
-.hero-image{
-    height: 100vh;
-    width: 100%;
-}
+
+/*Desktop Styling*/
+
 
 
 
