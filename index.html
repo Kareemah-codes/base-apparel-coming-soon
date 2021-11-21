@@ -7,7 +7,8 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
   <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Base Apparel coming soon page</title>
@@ -17,40 +18,41 @@
 <body>
 
 
-  <main class="flexbox-container-mobile flexbox-container-desktop">
-    <header>
-      <nav>
-        <logo> <img class="logo" src="images/logo.svg" alt=""> </logo>
-      </nav>
-    </header>
-    <section class="hero-image">
+  <main>
+    <div class="flexbox-container">
+      <header class="header">
+        <nav>
+          <logo> <img class="logo" src="images/logo.svg" alt="company logo"> </logo>
+        </nav>
+      </header>
+      <section class="hero-image">
 
-    </section>
-    
-    <section class="content">
+      </section>
 
-      <div class="content-title-container">
-        <p class="pink-text-title">WE'RE</p>
-        <p class="title-text"> COMING</p>
-        <p class="title-text"> SOON</p>
-      </div>
+      <section class="content, content-flexbox-container-desktop">
 
-      <div class="content-description-container">
-        <p class="content-description">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
-      </div>
-         
+        <div class="content-title-container">
+          <p class="pink-text-title">WE'RE</p>
+          <p class="title-text"> COMING</p>
+          <p class="title-text"> SOON</p>
+        </div>
 
-    </section>
+        <div class="content-description-container">
+          <p class="content-description">Hello fellow shoppers! We're currently building our new fashion store. Add your
+            email below to stay up-to-date with announcements and our launch deals.</p>
+        </div>
 
-    <form action="#">
-      <!-- Put a label for accessability reasons,however,label will be styled to not appear on screen so as to not affect original design -->
-      <label id="email_label" for="email-box">Enter your email address</label> 
-      <input id="email-box" type="email" placeholder="Email Address">
-      <button type="submit" class="button"><img src="images/icon-arrow.svg" alt="submit button"></button>
+        <form action="#">
+          <!-- Put a label for accessability reasons,however,label will be styled to not appear on screen so as to not affect original design -->
+          <label id="email_label" for="email-box">Enter your email address</label>
+          <input id="email-box" type="email" placeholder="Email Address">
+          <button type="submit" class="button"><img src="images/icon-arrow.svg" alt="submit button"></button>
 
-      
-    </form>
-    
+
+        </form>
+
+    </div>
+
   </main>
 
   <footer>
