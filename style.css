@@ -40,13 +40,13 @@ body {
 }
 .content-title-container{
     width: 100%;
+    text-align: center;
 }
 
 .title-text, .pink-text-title {
     width: 100%;
-    text-align: center;
     font-size: 25px;
-    margin-top: 15px;
+    margin-top: 20px;
     color: hsl(0, 6%, 24%);
     font-weight: 600;
 
@@ -86,7 +86,9 @@ form {
     border-radius: 20px;
     width: 100%;
    }
-
+ #email-box:focus{
+     outline: none;
+ }
 .button {
     background-color: hsl(0, 76%, 82%);
     border-radius: 12px;
