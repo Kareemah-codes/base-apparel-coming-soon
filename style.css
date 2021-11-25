@@ -42,6 +42,9 @@ body {
     width: 100%;
     text-align: center;
 }
+h1{
+    letter-spacing: 1rem;
+}
 
 .title-text, .pink-text-title {
     width: 100%;
@@ -57,10 +60,9 @@ body {
 }
 .content-description-container{
       width: 100%;
-      text-align: center;
 }
 .content-description {
-    width: 100%;
+    width: 70%;
 }
 
 form {
@@ -97,6 +99,11 @@ form {
     width: 20%;
 }
 
+.attribution{
+    font-size: 10px;
+    padding-left: 1.5rem;
+}
+
 
 /*Mobile Styling */
 
@@ -105,15 +112,22 @@ form {
 
     .grid-container{
         display: grid;
-        grid-template-columns:0.1fr 1.5fr 1fr;
-        grid-template-areas: ". header    hero-image"
-                             ". content   hero-image " ;
+        grid-template-columns:0.3fr 1.5fr 1fr;
+        grid-template-areas: ".  header    hero-image"
+                             ".  content   hero-image " ;
                             
     }
     .header{
         grid-area: header;
         height: 20vh;
-       
+        width: 100%;       
+    }
+    .logo-container{
+        width: 100%;
+        text-align: left;
+    }
+    .logo{
+        margin:1.2rem 0rem 0rem 0rem;
     }
     .content{
         grid-area: content;
@@ -124,7 +138,10 @@ form {
         flex-direction: column;
         justify-content: space-evenly;
     }
-    
+    .content-title-container{
+        width: 100%;
+        text-align: left;
+    }
 
 
     .hero-image {
