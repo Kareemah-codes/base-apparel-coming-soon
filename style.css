@@ -38,6 +38,9 @@ body {
     width: 100%;
 
 }
+.content-title-container{
+    width: 100%;
+}
 
 .title-text, .pink-text-title {
     text-align: center;
@@ -75,12 +78,11 @@ form {
     position: absolute;
     left: 10000px;
 }
-
+/*end*/
 #email-box {
     border: none;
     padding: 12px;
-    flex-grow: 2;
-}
+   }
 
 .button {
     background-color: hsl(0, 76%, 82%);
@@ -95,28 +97,32 @@ form {
 /*Desktop Styling*/
 @media only screen and (min-width:992px) {
 
-    .flexbox-container {
-        display: flex;
-        flex-direction: row;
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-areas: "header    hero-image"
+                             "content   hero-image " ;
+        gap: 10px;                              
     }
-    .content {
-        order: 2;
-        height: 70vh;
+    .header{
+        grid-area: header;
+        height: 20vh;
     }
-    .content-flexbox-container-desktop{
-        display: flex;
-        flex-direction: column;
+    .content{
+        grid-area: content;
+        height:80vh;
+        
+    }
+    
 
-    }
 
     .hero-image {
-        order: 3;
         background-image: url("images/hero-desktop.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        width: 60%;
+        width: 100%;
         height: 100vh;
-
+        grid-area: hero-image;
     }
 
 
