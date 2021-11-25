@@ -55,11 +55,12 @@ body {
 .pink-text-title {
     color: hsl(0, 36%, 70%);
 }
-
+.content-description-container{
+      width: 100%;
+      text-align: center;
+}
 .content-description {
-    text-align: center;
-    padding: 20px;
-
+    width: 100%;
 }
 
 form {
@@ -69,7 +70,7 @@ form {
     border-width: thin;
     border-radius: 20px;
     margin: 15px;
-    width: 80%;
+    width: 60%;
 
 
 }
@@ -104,10 +105,10 @@ form {
 
     .grid-container{
         display: grid;
-        grid-template-columns: 1.5fr 1fr;
-        grid-template-areas: "header    hero-image"
-                             "content   hero-image " ;
-        gap: 10px;                              
+        grid-template-columns:0.1fr 1.5fr 1fr;
+        grid-template-areas: ". header    hero-image"
+                             ". content   hero-image " ;
+                            
     }
     .header{
         grid-area: header;
