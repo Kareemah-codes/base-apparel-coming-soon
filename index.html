@@ -25,7 +25,7 @@
         <nav>
           <div class="logo-container">
             <img class="logo" src="images/logo.svg" alt="company logo">
-          </div>         
+          </div>
         </nav>
       </header>
 
@@ -34,7 +34,7 @@
 
       <div class="content content-flex-container">
         <div class="content-title-container">
-          <h1>
+          <h1 class="">
             <span class="pink-text-title">WE'RE</span><br>
             <span class="title-text"> COMING</span><br>
             <span class="title-text"> SOON</span><br>
@@ -44,14 +44,17 @@
         </div>
         <div class="content-description-container">
           <p class="content-description">Hello fellow shoppers! We're currently building our new fashion store. Add
-            your
-            email below to stay up-to-date with announcements and our launch deals.</p>
+            your email below to stay up-to-date with announcements and our launch deals.</p>
         </div>
-        <form action="#">
-          <!-- Put a label for accessability reasons,however,label will be styled to not appear on screen so as to not affect original design -->
-          <label id="email_label" for="email-box">Enter your email address</label>
-          <input id="email-box" type="email" placeholder="Email Address">
-          <button type="submit" class="button"><img src="images/icon-arrow.svg" alt="submit button"></button>
+        <form id="form-container" action="#">
+          <div id="form">
+            <!-- Put a label for accessability reasons,however,label will be styled to not appear on screen so as to not affect original design -->
+            <label id="email_label" for="email-box">Enter your email address</label>
+            <input id="email-box" type="email" placeholder="Email Address">
+            <img src="images/icon-error.svg" id="error-icon" alt="error icon" srcset="">
+            <button type="submit" class="button"><img src="images/icon-arrow.svg" alt="submit button"></button>
+          </div>
+          <small id="error-message">Please provide a valid email</small>
         </form>
         <div>
           <p class="attribution">
@@ -60,7 +63,6 @@
           </p>
         </div>
       </div>
-      <!--  -->
     </div>
 
   </main>
@@ -69,5 +71,6 @@
 
   </footer>
 </body>
+<script src="app.js"></script>
 
 </html>
