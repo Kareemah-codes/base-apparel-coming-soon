@@ -5,17 +5,21 @@
 }
 
 body {
+    margin: 0;
     font-size: 16px;
     font-family: 'Josefin Sans', sans-serif;
-}
-body {
-    margin: 0;
+    background-image: url("images/bg-pattern-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
-.flexbox-container {
+
+ .flexbox-container {
     display: flex;
-    flex-direction: column;
-}
+    flex-direction:column;
+    
+    
+} 
 
 .logo {
     width: 40%;
@@ -29,26 +33,32 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    height: 20rem;
+    height: 22rem;
     width: 100%;
 }
 
 .content {
-    background-color: white;
     width: 100%;
-
+    height: auto;
 }
-.content-title-container{
+.content-flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    
+}
+.content-title-container {
     width: 100%;
     text-align: center;
 }
-h1{
-    letter-spacing: 1rem;
+
+h1 {
+    letter-spacing: 1.2rem;
 }
 
 .title-text, .pink-text-title {
     width: 100%;
-    font-size: 25px;
+    font-size: 2rem;
     margin-top: 20px;
     color: hsl(0, 6%, 24%);
     font-weight: 600;
@@ -58,20 +68,25 @@ h1{
 .pink-text-title {
     color: hsl(0, 36%, 70%);
 }
-.content-description-container{
-      width: 100%;
-}
-.content-description {
-    width: 70%;
+
+.content-description-container {
+    width: 100%;
+    text-align: center;
 }
 
-form {
+.content-description {
+    width: 100%;
+    color: hsl(0, 36%, 70%);
+    /* margin-top: 2rem; */
+}
+
+#form {
     display: flex;
     justify-content: space-between;
     border: solid hsl(356, 18%, 83%);
     border-width: thin;
     border-radius: 20px;
-    margin: 15px;
+    /* margin: 1.2rem 0rem 0rem 1.2rem; */
     width: 60%;
 
 
@@ -82,16 +97,32 @@ form {
     position: absolute;
     left: 10000px;
 }
+
 /*end*/
 #email-box {
     border: none;
     padding: 12px;
     border-radius: 20px;
     width: 100%;
-   }
- #email-box:focus{
-     outline: none;
- }
+}
+
+#email-box:focus {
+    outline: none;
+}
+
+#error-icon {
+    width: auto;
+    height: 1.5rem;
+    margin-right: 12px;
+    margin-top: 6px;
+    display: none;
+}
+
+#error-message {
+    color: hsl(0, 93%, 68%);
+    display: none;
+}
+
 .button {
     background-color: hsl(0, 76%, 82%);
     border-radius: 12px;
@@ -99,48 +130,66 @@ form {
     width: 20%;
 }
 
-.attribution{
+.attribution {
     font-size: 10px;
-    padding-left: 1.5rem;
+    /* margin: 1.2rem 0rem 0rem 1.2rem; */
 }
 
 
 /*Mobile Styling */
 
 /*Desktop Styling*/
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:600px) {
 
-    .grid-container{
+    .grid-container {
         display: grid;
-        grid-template-columns:0.3fr 1.5fr 1fr;
+        grid-template-columns: 0.3fr 1.5fr 1fr;
         grid-template-areas: ".  header    hero-image"
-                             ".  content   hero-image " ;
-                            
+            ".  content   hero-image ";
+
     }
-    .header{
+
+    .header {
         grid-area: header;
         height: 20vh;
-        width: 100%;       
+        width: 100%;
     }
-    .logo-container{
+
+    .logo-container {
         width: 100%;
         text-align: left;
     }
-    .logo{
-        margin:1.2rem 0rem 0rem 0rem;
+
+    .logo {
+        margin: 1.2rem 0rem 0rem 0rem;
     }
-    .content{
+
+    .content {
         grid-area: content;
-        height:80vh;
+        height: 80vh;
     }
-    .content-flex-container{
+
+    .content-flex-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content:space-evenly;
     }
-    .content-title-container{
+
+    .content-title-container {
         width: 100%;
         text-align: left;
+    }
+    .title-text, .pink-text-title {
+        font-size: 2.5rem;
+    }
+    .content-description-container {
+        width: 100%;
+        text-align: left;
+
+    }
+    .content-description {
+        width: 70%;
+        color: hsl(0, 36%, 70%);
     }
 
 
@@ -152,9 +201,8 @@ form {
         height: 100vh;
         grid-area: hero-image;
     }
-    .title-text, .pink-text-title{
-        font-size:2.5rem;
-    }
+
+    
 
 
 }
